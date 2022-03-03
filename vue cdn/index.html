@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./vue3.js"></script>
+    <style>
+      .no-style {
+        list-style: none;
+      }
+      .fav {
+        background-color: lightcoral;
+      }
+      li {
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <pre>{{ books }}</pre>
+      <h1 v-if="showTitle">{{ title }}</h1>
+      <h1 v-else>No title</h1>
+      <ul>
+        <li v-for="book in filteredBooks" :class="[{fav:book.isFav},'no-style']" @dblclick="toggleFav(book)">
+          <!-- @click="book.isFav = !book.isFav" -->
+          <h4>{{ book.title }}</h4>
+          <p>{{ book.author }}</p>
+          <small>{{ book.price }}</small>
+        </li>
+      </ul>
+      <!-- <button @click="myFunc($event,'hello')">Click</button> -->
+      <button @click="showAll">click</button>
+      <!-- ()mar pr pl yay p (event) pyan phan yin event ya--->
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
