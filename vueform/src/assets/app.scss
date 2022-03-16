@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;900&display=swap");
+$primary: #3f37c9;
+$font-family-sans-serif: "Poppins", sans-serif;
+$input-border-color: #3e37c92f;
+$form-check-input-border: 1px solid #3e37c92f;
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+* {
+  letter-spacing: 0.8px;
+}
