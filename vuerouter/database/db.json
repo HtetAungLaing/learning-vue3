@@ -1,0 +1,7 @@
+{
+    "jobs" : [
+        { "id": 1, "position": "Web Designer", "description": "Designs beautiful webs" },
+        { "id": 2, "position": "Web Developer", "description": "Develops high demands webs" },
+        { "id": 3, "position": "Web Security", "description": "Secure sensitive infos about webs" }
+    ]
+}
