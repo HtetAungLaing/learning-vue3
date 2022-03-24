@@ -1,0 +1,22 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Go to school",
+      "detail": "Nulla quis lorem ut libero malesuada feugiat.",
+      "complete": false
+    },
+    {
+      "id": 2,
+      "title": "Eating in shop",
+      "detail": "Nulla quis lorem ut libero malesuada feugiat.",
+      "complete": true
+    },
+    {
+      "id": 3,
+      "title": "Playing c2d again",
+      "detail": "Nulla quis lorem ut libero malesuada feugiat. again",
+      "complete": true
+    }
+  ]
+}
