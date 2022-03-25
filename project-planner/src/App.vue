@@ -5,7 +5,9 @@
 <script>
 import MainNav from "./components/MainNav";
 export default {
-  components: { MainNav },
+  components: {
+    MainNav,
+  },
 };
 </script>
 <style>
@@ -16,7 +18,5 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  max-width: 600px;
-  margin: 0 auto;
 }
 </style>

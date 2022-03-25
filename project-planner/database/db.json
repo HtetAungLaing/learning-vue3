@@ -4,19 +4,24 @@
       "id": 1,
       "title": "Go to school",
       "detail": "Nulla quis lorem ut libero malesuada feugiat.",
-      "complete": false
+      "complete": true
     },
     {
       "id": 2,
       "title": "Eating in shop",
       "detail": "Nulla quis lorem ut libero malesuada feugiat.",
-      "complete": true
+      "complete": false
     },
     {
       "id": 3,
-      "title": "Playing c2d again",
-      "detail": "Nulla quis lorem ut libero malesuada feugiat. again",
+      "title": "Playing c2d",
+      "detail": "Nulla quis lorem ut libero malesuada feugiat.",
       "complete": true
+    },
+    {
+      "title": "hello new project from json-server",
+      "detail": "this is fake json-server on loacalhost fully supported rest api routes.",
+      "id": 4
     }
   ]
 }

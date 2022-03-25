@@ -3,7 +3,7 @@
     <div class="card-body" :class="[{ complete: project.complete, uncomplete: !project.complete }, 'rounded-3']">
       <div class="d-flex justify-content-between align-items-center">
         <p class="mb-0 title" @click="showDetail = !showDetail">{{ project.title }}</p>
-        <div>
+        <div class="text-nowrap">
           <router-link :to="{ name: 'editProject', params: { id: this.project.id } }" class="btn btn-outline-success btn-sm">
             <i class="bi bi-pen"></i>
           </router-link>
