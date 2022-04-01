@@ -9,10 +9,10 @@
       <div class="col-12 col-lg-8">
         <div class="d-flex justify-content-between">
           <p class="mb-0 text-black-50 small">
-            <small>Invoice Number</small>
+            <small>Invoice Number : </small>
             {{ invoiceNumber }}
           </p>
-          <a href="" target="blank" class="btn btn-sm btn-primary">Create New Maker <i class="bi bi-file-earmark-diff"></i></a>
+          <a href="" target="blank" class="btn btn-sm btn-primary hideOnPrint">Create New Maker <i class="bi bi-file-earmark-diff"></i></a>
         </div>
       </div>
     </div>

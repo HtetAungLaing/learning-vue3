@@ -1,5 +1,5 @@
 <template>
-  <div class="container mt-3">
+  <div class="container mt-3 hideOnPrint">
     <div class="row justify-content-center">
       <div class="col-12 col-lg-8">
         <form @submit.prevent="addRecord">

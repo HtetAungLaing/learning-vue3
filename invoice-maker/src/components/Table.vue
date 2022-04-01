@@ -5,12 +5,12 @@
         <table class="table table-secondary rounded m-0">
           <thead>
             <tr>
-              <th>#</th>
-              <th>Item</th>
-              <th>Price</th>
-              <th>Quantity</th>
-              <th>Cost</th>
-              <th>Action</th>
+              <th class="text-center">#</th>
+              <th class="text-center">Item</th>
+              <th class="text-center">Price</th>
+              <th class="text-center">Quantity</th>
+              <th class="text-center">Cost</th>
+              <th class="hideOnPrint">Action</th>
             </tr>
           </thead>
           <tbody>
@@ -20,7 +20,7 @@
               <td class="text-center">{{ record.item.price }}</td>
               <td class="text-center">{{ record.quantity }}</td>
               <td class="text-center">${{ record.cost }}</td>
-              <td class="text-center">
+              <td class="text-center hideOnPrint">
                 <button @click="delRecord(index)" class="btn btn-outline-danger btn-sm">
                   <i class="bi bi-trash"></i>
                 </button>
@@ -41,6 +41,9 @@
             </tr>
           </tfoot>
         </table>
+      </div>
+      <div class="col-12 col-g-8 mt-3 d-flex justify-content-center">
+        <button class="btn btn-secondary" @click="printInvoice">Print <i class="bi bi-printer"></i></button>
       </div>
     </div>
   </div>
@@ -63,8 +66,18 @@ export default {
     delRecord(index) {
       this.$emit("delRecord", index);
     },
+
+    printInvoice() {
+      window.print();
+    },
   },
 };
 </script>
 
-<style scoped></style>
+<style>
+@media print {
+  .hideOnPrint {
+    display: none;
+  }
+}
+</style>
